@@ -24,3 +24,13 @@ do
 done
 echo "# Done"
 echo
+
+echo "  git feature <name>"
+echo "  git release <name>"
+echo "  git hotfix  <name>"
+echo "  git support <name>"
+echo "  git close"
+
+echo
+echo "# Enjoy!"
+echo
