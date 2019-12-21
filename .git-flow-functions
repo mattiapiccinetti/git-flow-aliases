@@ -1,0 +1,31 @@
+#!/bin/bash
+
+feature () {
+	feature_name=$1
+	git flow feature start $feature_name
+}
+
+release () {
+    version=$1
+    git flow release start $version
+}
+
+hotfix () {
+    version=$1
+    git flow hotfix start $version
+}
+
+support () {
+    version=$1
+    git flow support start $version
+}
+
+close () {
+    current_branch=$(git rev-parse --abbrev-ref HEAD)
+    current_branch_slash_replaced=$(echo $current_branch | sed 's/\// /g')
+    IFS=' ' read -r -a type_and_name <<< "$current_branch_slash_replaced"
+    branch_type=${type_and_name[0]}
+    feature_name=${type_and_name[1]}
+
+    git flow $branch_type finish -F $feature_name
+}
