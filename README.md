@@ -1,15 +1,19 @@
 # git-flow-aliases
-A bunch of git aliases on top of git-flow by [Vincent Driessen](https://github.com/nvie/gitflow)
+Tired to type all the git-flow commands? 
+
+Here's bunch of git aliases on top of [git-flow](https://github.com/nvie/gitflow) by [Vincent Driessen]((https://github.com/nvie))
+
+### Requirements
+* git (really?)
+* git-flow ([installation instructions](https://github.com/nvie/gitflow/wiki/Installation))
+* curl
 
 ### Installation
-Git-flow-aliases could be installed by running the following command in your terminal.
-
-#### Via curl
 ```shell
 curl -fsSL https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/install.sh | sh
 ```
 
-#### List of aliases
+### List of aliases
 ```shell
 git feature <name> # start the feature branch
 git release <name> # start the release branch
@@ -18,6 +22,9 @@ git support <name> # start the support branch
 git close          # close the current branch you're working on, no matter the branch type
 ```
 
+### How to uninstall git-flow-aliases
+```shell
+curl -fsSL https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/unstall.sh | sh
+```
 
-#### Uninstall git-flow-aliases
-Just remove the .git-flow-functions from your home directory and delete the aliases from your global .gitconfig file
+or just delete the **.git-flow-functions** from your home directory and remove the aliases from your global **.gitconfig** file
