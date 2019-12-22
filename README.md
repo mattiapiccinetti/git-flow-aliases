@@ -1,7 +1,7 @@
 # git-flow-aliases
 Tired to type all the git-flow commands? 
 
-Here's bunch of git aliases on top of [git-flow](https://github.com/nvie/gitflow) by [Vincent Driessen]((https://github.com/nvie))
+Here's bunch of git aliases on top of [git-flow](https://github.com/nvie/gitflow) by [Vincent Driessen](https://github.com/nvie)
 
 ### Requirements
 * git (really?)
