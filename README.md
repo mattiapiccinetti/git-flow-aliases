@@ -24,7 +24,7 @@ git close          # close the current branch you're working on, no matter the b
 
 ### How to uninstall git-flow-aliases
 ```shell
-curl -fsSL https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/unstall.sh | sh
+curl -fsSL https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/uninstall.sh | sh
 ```
 
 or just delete the **.git-flow-functions** from your home directory and remove the aliases from your global **.gitconfig** file
