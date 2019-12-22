@@ -5,7 +5,7 @@ Here's bunch of git aliases on top of [git-flow](https://github.com/nvie/gitflow
 
 ### Requirements
 * git (really?)
-* git-flow ([installation instructions](https://github.com/nvie/gitflow/wiki/Installation))
+* git-flow (no way! [installation instructions](https://github.com/nvie/gitflow/wiki/Installation))
 * curl
 
 ### Installation
