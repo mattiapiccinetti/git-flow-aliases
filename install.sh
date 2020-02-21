@@ -18,10 +18,11 @@ curl -sLo $HOME/$FILENAME \
     https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/$FILENAME
 
 echo "# Adding git aliases to your global .gitconfig file"
-for alias in "feature" "release" "hotfix" "support" "close"
+for alias in "feature" "release" "hotfix" "support" "close" "bump" "sync" "track"
 do
     git config --global alias.$alias "!bash -c 'source \$HOME/$FILENAME && $alias \$0'"
 done
+
 echo "# Done"
 echo
 
@@ -30,6 +31,10 @@ echo "  git release <name>"
 echo "  git hotfix  <name>"
 echo "  git support <name>"
 echo "  git close"
+echo
+echo "  git sync"
+echo "  git track"
+echo "  git bump <version>"
 
 echo
 echo "# Enjoy!"

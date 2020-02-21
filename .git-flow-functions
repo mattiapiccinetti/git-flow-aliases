@@ -32,3 +32,14 @@ _git_flow_start_command () {
 
     git flow $branch_type start $name
 }
+
+sync () {
+    git checkout master
+    git pull origin master:master
+    git checkout develop
+    git pull origin develop:develop
+}
+
+bump () {
+    git commit -am "Bump version to $1"
+}

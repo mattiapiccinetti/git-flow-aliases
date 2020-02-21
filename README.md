@@ -22,6 +22,12 @@ git support <name> # start the support branch
 git close          # close the current branch you're working on, no matter the branch type
 ```
 
+```shell
+git sync            # pull master and develop branches, and then checkout develop
+git track           # set the current branch as upstream
+git bump <version>  # commit with a default message including the bumped version
+```
+
 ### How to uninstall git-flow-aliases
 ```shell
 curl -fsSL https://raw.githubusercontent.com/mattiapiccinetti/git-flow-aliases/master/uninstall.sh | sh
