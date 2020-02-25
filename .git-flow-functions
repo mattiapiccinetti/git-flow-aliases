@@ -43,3 +43,9 @@ sync () {
 bump () {
     git commit -am "Bump version to $1"
 }
+
+track () {
+    current=$(git rev-parse --abbrev-ref HEAD)
+    git branch --set-upstream-to=origin/$current $current
+}
+
